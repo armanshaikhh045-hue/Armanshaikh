@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, viewport-fit=cover"
+		/>
+		<title>Armaan — Creative Web Developer</title>
+		<meta
+			name="description"
+			content="Armaan builds premium, interactive and 3D websites for ambitious brands."
+		/>
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- Grain / noise overlay for premium texture -->
+		<div class="grain" aria-hidden="true"></div>
+
+		<!-- ============ NAV ============ -->
+		<header class="nav" id="nav">
+			<a href="#hero" class="nav__logo">ARMAAN</a>
+			<button
+				class="nav__toggle"
+				id="menuToggle"
+				aria-expanded="false"
+				aria-controls="menuOverlay"
+			>
+				<span class="nav__toggle-label" id="menuLabel">MENU</span>
+				<span class="nav__toggle-icon">
+					<span></span><span></span>
+				</span>
+			</button>
+		</header>
+
+		<!-- ============ FULLSCREEN MENU ============ -->
+		<nav class="menu-overlay" id="menuOverlay" aria-hidden="true">
+			<ul class="menu-overlay__list">
+				<li>
+					<a href="#work" class="menu-link" data-index="01">WORK</a>
+				</li>
+				<li>
+					<a href="#services" class="menu-link" data-index="02"
+						>SERVICES</a
+					>
+				</li>
+				<li>
+					<a href="#skills" class="menu-link" data-index="03"
+						>SKILLS</a
+					>
+				</li>
+				<li>
+					<a href="#experience" class="menu-link" data-index="04"
+						>EXPERIENCE</a
+					>
+				</li>
+				<li>
+					<a href="#contact" class="menu-link" data-index="05"
+						>CONTACT</a
+					>
+				</li>
+			</ul>
+			<div class="menu-overlay__footer">
+				<span>PORTFOLIO / 2026</span>
+				<span>MUMBAI, INDIA</span>
+			</div>
+		</nav>
+
+		<main>
+			<!-- ============ 01 — HERO ============ -->
+			<section class="hero" id="hero">
+				<canvas id="heroCanvas" class="hero__canvas"></canvas>
+
+				<p class="hero__pretitle reveal-line">
+					DESIGNING PREMIUM<br />DIGITAL EXPERIENCES
+				</p>
+
+				<div class="hero__label reveal-line">
+					<span class="dot"></span>
+					<span>PORTFOLIO — 2026</span>
+				</div>
+
+				<h1 class="hero__headline">
+					<span class="line" data-line>ARMAAN</span>
+					<span class="line" data-line>CREATIVE</span>
+					<span class="line" data-line>DEVELOPER</span>
+				</h1>
+				<p class="hero__subtitle">
+					UI/UX DESIGNER &amp; CREATIVE<br />
+					THINKER
+				</p>
+
+				<p class="hero__desc-right">
+					I craft digital experiences<br />
+					that are beautiful, intuitive,<br />
+					and built with purpose.
+				</p>
+
+				<div class="hero__scroll">
+					<span>SCROLL</span>
+					<span class="hero__scroll-line"></span>
+				</div>
+			</section>
+			
+			
+			<!-- ================= HOW WE WORK — paste right after your hero section ================= -->
+<section class="hww-section" id="hww-how-we-work">
+  <div class="hww-grid-bg" aria-hidden="true"></div>
+
+  <div class="hww-intro">
+    <span class="hww-pill">How we work</span>
+    <h2 class="hww-heading">
+      Let us show you how we drive<br>your brand to new heights
+      <svg class="hww-arrow" viewBox="0 0 60 40" aria-hidden="true">
+        <path d="M2 4 C20 2 34 14 30 26 C28 32 20 34 16 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M9 25 L16 30 L15 21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </h2>
+    <p class="hww-subtext">
+  <p class="hww-subtext">
+  We create premium digital experiences<br>
+  that make your brand stand out<br>
+  and connect with your audience.
+</p>
+  </div>
+
+  <div class="hww-composition">
+    <svg class="hww-path-svg" preserveAspectRatio="none" aria-hidden="true">
+      <path class="hww-path" d=""></path>
+    </svg>
+
+    <span class="hww-dot" data-dot="1"></span>
+    <span class="hww-dot" data-dot="2"></span>
+    <span class="hww-dot" data-dot="3"></span>
+    <span class="hww-dot" data-dot="4"></span>
+
+    <article class="hww-card hww-card-1">
+      <span class="hww-card-number">01</span>
+      <h3 class="hww-card-title">Define</h3>
+      <p class="hww-card-text"> We understand your goals, audience, and vision to define a clear direction for your project. </p>
+    </article>
+
+    <article class="hww-card hww-card-2">
+      <span class="hww-card-number">02</span>
+      <h3 class="hww-card-title">Design</h3>
+      <p class="hww-card-text">
+  We transform your ideas into a premium, intuitive design that looks distinctive and connects with your audience.
+    </article>
+
+    <article class="hww-card hww-card-3">
+      <span class="hww-card-number">03</span>
+      <h3 class="hww-card-title">Build</h3>
+      <p class="hww-card-text">We bring your design to life with clean, responsive, and high-performance development.</p>
+    </article>
+
+    <article class="hww-card hww-card-4">
+      <span class="hww-card-number">04</span>
+      <h3 class="hww-card-title">Launch</h3>
+      <p class="hww-card-text">We refine every detail, test the experience, and launch a polished digital product ready to make an impact.</p>
+    </article>
+
+    <p class="hww-ready-text">*Ready to be delivered!</p>
+  </div>
+</section>
+<!-- ================= END HOW WE WORK ================= -->
+
+	
+			
+							
+			
+         <!-- ================= WORK SECTION — new, from scratch ================= -->
+<section class="work-section" id="work">
+  <div class="work-intro">
+    <span class="work-eyebrow">Selected Work</span>
+    <h2 class="work-heading">Work</h2>
+    <p class="work-description">
+      A curated collection of brand sites, e-commerce builds and cinematic
+      landing pages — each one designed and built end-to-end.
+    </p>
+  </div>
+
+  <div class="work-list">
+
+    <article class="work-card" style="--work-accent:#5b6d4d;">
+      <span class="work-tab">01</span>
+      <a class="work-visual" href="#" aria-label="View the Premium Café project">
+        <!-- REPLACE assets/projects/cafe.jpg with the real preview image -->
+        <img class="work-image" src="c.jpg.png.png" alt="Preview of the Premium Café brand website homepage">
+        <span class="work-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7v8"/></svg>
+        </span>
+      </a>
+      <div class="work-meta">
+        <h3 class="work-name">Premium Café</h3>
+        <p class="work-category">Brand Website — Interactive</p>
+      </div>
+    </article>
+
+    <article class="work-card" style="--work-accent:#3d4a35;">
+      <span class="work-tab">02</span>
+      <a class="work-visual" href="#" aria-label="View the Fashion Brand project">
+        <!-- REPLACE assets/projects/fashion.jpg with the real preview image -->
+        <img class="work-image" src="Arm.jpg" alt="Preview of the Fashion Brand e-commerce website">
+        <span class="work-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7v8"/></svg>
+        </span>
+      </a>
+      <div class="work-meta">
+        <h3 class="work-name">Fashion Brand</h3>
+        <p class="work-category">E-Commerce — Cinematic</p>
+      </div>
+    </article>
+
+    <article class="work-card" style="--work-accent:#4a5940;">
+      <span class="work-tab">03</span>
+      <a class="work-visual" href="#" aria-label="View the Creative Business project">
+        <!-- REPLACE assets/projects/creative.jpg with the real preview image -->
+        <img class="work-image" src="Arma.jpg" alt="Preview of the Creative Business 3D landing page">
+        <span class="work-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7v8"/></svg>
+        </span>
+      </a>
+      <div class="work-meta">
+        <h3 class="work-name">Creative Business</h3>
+        <p class="work-category">Landing Page — 3D</p>
+      </div>
+    </article>
+
+    <article class="work-card" style="--work-accent:#2f3a29;">
+      <span class="work-tab">04</span>
+      <a class="work-visual" href="#" aria-label="View the Product Brand project">
+        <!-- REPLACE assets/projects/product.jpg with the real preview image -->
+        <img class="work-image" src="Armann.jpg" alt="Preview of the Product Brand website redesign">
+        <span class="work-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7v8"/></svg>
+        </span>
+      </a>
+      <div class="work-meta">
+        <h3 class="work-name">Product Brand</h3>
+        <p class="work-category">Website Redesign</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+<!-- ================= END WORK SECTION ================= -->
+
+
+<!-- ================= FOOTER / CTA — new, from scratch ================= -->
+<footer class="footer-section" id="contact">
+  <div class="footer-card">
+    <span class="footer-eyebrow">Let's work together</span>
+
+   
+
+    <h2 class="footer-heading">Tell me about your<br>next project.</h2>
+
+    <div class="footer-buttons">
+      <!-- REPLACE your@email.com with your real email address -->
+    <a class="footer-button footer-button--primary"
+   href="https://mail.google.com/mail/?view=cm&fs=1&to=armanshaikhh045@gmail.com"
+   onclick="window.location.href='https://mail.google.com/mail/?view=cm&fs=1&to=armanshaikhh045@gmail.com'; return false;">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg>
+        Email Me
+      </a>
+      <!-- REPLACE YOUR_NUMBER with your WhatsApp number, digits only, country code first -->
+      <a class="footer-button footer-button--secondary" href="https://wa.me/919506473526" target="_blank" rel="noopener noreferrer">
+        WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span class="footer-bottom-item">© 2026 ARMAAN</span>
+    <span class="footer-bottom-item footer-bottom-role">Creative Web Developer</span>
+    <nav class="footer-bottom-links" aria-label="Social links">
+      <a href="#" class="footer-bottom-item">Instagram</a>
+      <a href="#" class="footer-bottom-item">LinkedIn</a>
+      <!-- REPLACE your@email.com with your real email address -->
+      <a href="mailto:armanshaikhh045@gmail.com" class="footer-bottom-item">Email</a>
+    </nav>
+  </div>
+</footer>
+<!-- ================= END FOOTER / CTA ================= -->
+
+
+		
+</main>
+
+		<!-- ============ SCRIPTS ============ -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
+
+
